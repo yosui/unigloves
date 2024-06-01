@@ -3779,9 +3779,11 @@ uuid@^8.3.2:
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 "v4-core@file:./lib/v4-core":
+  version "1.0.0"
   resolved "file:lib/v4-core"
 
 "v4-periphery@file:./lib/v4-periphery":
+  version "1.0.0"
   resolved "file:lib/v4-periphery"
 
 v8-compile-cache-lib@^3.0.1:
