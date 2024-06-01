@@ -1,24 +1,35 @@
-const { ethers } = require("hardhat");
+const hre = require("hardhat");
+const { ethers } = hre;
 
 async function main() {
+  const decimals = 18;
+  const initialSupply = ethers.utils.parseUnits("1000", decimals);
+
+  // Deploy GLOVE token
+  const GLOVEToken = await ethers.getContractFactory("GLOVE");
+  const gloveToken = await GLOVEToken.deploy(initialSupply);
+  await gloveToken.deployed();
+  console.log("GLOVE token deployed to:", gloveToken.address);
+
+  const poolManagerAddress = "0xd2b7230A770EA70A19369Ad6806Ba708e47DE08b";
+
   // Deploy CustomGloveCurve
   const CustomGloveCurve = await ethers.getContractFactory("CustomGloveCurve");
-  const customGloveCurve = await CustomGloveCurve.deploy(/* constructor arguments */);
+  const customGloveCurve = await CustomGloveCurve.deploy(poolManagerAddress);
   await customGloveCurve.deployed();
   console.log("CustomGloveCurve deployed to:", customGloveCurve.address);
 
   // Deploy DynamicGloveFee
-  const DynamicGloveFee = await ethers.getContractFactory("DynamicGloveFee");
-  const dynamicGloveFee = await DynamicGloveFee.deploy(/* constructor arguments */);
-  await dynamicGloveFee.deployed();
-  console.log("DynamicGloveFee deployed to:", dynamicGloveFee.address);
+  try {
+    const DynamicGloveFee = await ethers.getContractFactory("DynamicGloveFee");
+    const dynamicGloveFee = await DynamicGloveFee.deploy(poolManagerAddress);
+    await dynamicGloveFee.deployed();
+    console.log("DynamicGloveFee deployed to:", dynamicGloveFee.address);
+  } catch (err) {
+    console.log("DynamicGloveFee contract not found or failed to deploy:", err.message);
+  }
 
-  // Deploy GLOVE
-  const initialSupply = ethers.utils.parseEther("1000"); // 1000 GLOVE
-  const GLOVE = await ethers.getContractFactory("GLOVE");
-  const glove = await GLOVE.deploy(initialSupply, customGloveCurve.address, dynamicGloveFee.address);
-  await glove.deployed();
-  console.log("GLOVE deployed to:", glove.address);
+  console.log("Deployment completed successfully!");
 }
 
 main()

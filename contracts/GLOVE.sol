@@ -23,7 +23,7 @@ contract GLOVE is ERC20 {
         return 18;
     }
 
-    function buy(uint256 amount) external payable {
+    function buy(uint256 amount) public payable {
         require(amount > 0, "Amount must be greater than zero");
         require(totalSupply() + amount <= MAX_SUPPLY, "Purchase exceeds max supply");
 
@@ -52,6 +52,7 @@ contract GLOVE is ERC20 {
     }
 
     receive() external payable {
-        buy(msg.value);
+        uint256 amount = msg.value;
+        buy(amount);
     }
 }

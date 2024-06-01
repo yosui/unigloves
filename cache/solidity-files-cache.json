@@ -1,18 +1,57 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/silvershield/dev/ethprague/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1717168005116,
+    "/Users/silvershield/dev/unigloves/contracts/CustomGloveCurve.sol": {
+      "lastModificationDate": 1717272104624,
+      "contentHash": "39c478f3ecd5a015623e64711ed82585",
+      "sourceName": "contracts/CustomGloveCurve.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@uniswap/v4-core/src/types/Currency.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "CustomGloveCurve"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1717274208345,
       "contentHash": "c6375ef25e84c90b3d15f9ec4eef218f",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
         "version": "0.8.24",
         "settings": {
+          "evmVersion": "paris",
           "optimizer": {
-            "enabled": true,
+            "enabled": false,
             "runs": 200
           },
-          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -42,18 +81,18 @@
         "ERC20"
       ]
     },
-    "/Users/silvershield/dev/ethprague/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1717168005114,
-      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
-      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/types/Currency.sol": {
+      "lastModificationDate": 1717263085198,
+      "contentHash": "fd7c817bc4aff4fdf7eb741828f19d09",
+      "sourceName": "@uniswap/v4-core/src/types/Currency.sol",
       "solcConfig": {
         "version": "0.8.24",
         "settings": {
+          "evmVersion": "paris",
           "optimizer": {
-            "enabled": true,
+            "enabled": false,
             "runs": 200
           },
-          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -70,62 +109,28 @@
           }
         }
       },
-      "imports": [],
+      "imports": [
+        "../interfaces/external/IERC20Minimal.sol"
+      ],
       "versionPragmas": [
         "^0.8.20"
       ],
       "artifacts": [
-        "Context"
+        "CurrencyLibrary"
       ]
     },
-    "/Users/silvershield/dev/ethprague/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1717168005121,
-      "contentHash": "5517c8678c18eb1a8ba58810e7ca39ca",
-      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-      "solcConfig": {
-        "version": "0.8.24",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.20"
-      ],
-      "artifacts": [
-        "IERC20"
-      ]
-    },
-    "/Users/silvershield/dev/ethprague/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
-      "lastModificationDate": 1717168005115,
+    "/Users/silvershield/dev/unigloves/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
+      "lastModificationDate": 1717274208320,
       "contentHash": "4aefc698f77ecbace7f401257dfe182d",
       "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
       "solcConfig": {
         "version": "0.8.24",
         "settings": {
+          "evmVersion": "paris",
           "optimizer": {
-            "enabled": true,
+            "enabled": false,
             "runs": 200
           },
-          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -152,18 +157,90 @@
         "IERC721Errors"
       ]
     },
-    "/Users/silvershield/dev/ethprague/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
-      "lastModificationDate": 1717168005121,
+    "/Users/silvershield/dev/unigloves/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1717274208440,
+      "contentHash": "5517c8678c18eb1a8ba58810e7ca39ca",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1717274208316,
+      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1717274208441,
       "contentHash": "4c02fa6f7ae7b6c289cef80424f0c875",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
         "version": "0.8.24",
         "settings": {
+          "evmVersion": "paris",
           "optimizer": {
-            "enabled": true,
+            "enabled": false,
             "runs": 200
           },
-          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -190,18 +267,54 @@
         "IERC20Metadata"
       ]
     },
-    "/Users/silvershield/dev/ethprague/contracts/GLOVE.sol": {
-      "lastModificationDate": 1717174116151,
-      "contentHash": "54e20b33c82e952a752d85430ce309bd",
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/interfaces/external/IERC20Minimal.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "b1e20b81f1588bdc1857a7fc2bf2bedb",
+      "sourceName": "@uniswap/v4-core/src/interfaces/external/IERC20Minimal.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20Minimal"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/contracts/GLOVE.sol": {
+      "lastModificationDate": 1717270844172,
+      "contentHash": "ed00730cfc6d6f3e617b9a8faa95cc71",
       "sourceName": "contracts/GLOVE.sol",
       "solcConfig": {
         "version": "0.8.24",
         "settings": {
+          "evmVersion": "paris",
           "optimizer": {
-            "enabled": true,
+            "enabled": false,
             "runs": 200
           },
-          "evmVersion": "paris",
           "outputSelection": {
             "*": {
               "*": [
@@ -219,13 +332,1256 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "./CustomGloveCurve.sol",
+        "./DynamicGloveFee.sol"
       ],
       "versionPragmas": [
         "^0.8.20"
       ],
       "artifacts": [
         "GLOVE"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/contracts/DynamicGloveFee.sol": {
+      "lastModificationDate": 1717272246298,
+      "contentHash": "dababb3627a0df6863a1ec3f99a7120c",
+      "sourceName": "contracts/DynamicGloveFee.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v4-periphery/contracts/BaseHook.sol",
+        "@uniswap/v4-core/src/libraries/Hooks.sol",
+        "@uniswap/v4-core/src/interfaces/IPoolManager.sol",
+        "@uniswap/v4-core/src/types/PoolKey.sol",
+        "@uniswap/v4-core/src/types/BeforeSwapDelta.sol",
+        "@uniswap/v4-core/src/libraries/LPFeeLibrary.sol",
+        "./CustomGloveCurve.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "DynamicGloveFee"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-periphery/contracts/BaseHook.sol": {
+      "lastModificationDate": 1717262962034,
+      "contentHash": "bb2de20f3f7cb1c5614bb60c1f124291",
+      "sourceName": "@uniswap/v4-periphery/contracts/BaseHook.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v4-core/src/libraries/Hooks.sol",
+        "@uniswap/v4-core/src/interfaces/IPoolManager.sol",
+        "@uniswap/v4-core/src/interfaces/IHooks.sol",
+        "@uniswap/v4-core/src/types/BalanceDelta.sol",
+        "@uniswap/v4-core/src/types/PoolKey.sol",
+        "@uniswap/v4-core/src/types/BeforeSwapDelta.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "BaseHook"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/types/PoolKey.sol": {
+      "lastModificationDate": 1717263085198,
+      "contentHash": "cfc024578bc0ecd1d4c219f0a6e969c0",
+      "sourceName": "@uniswap/v4-core/src/types/PoolKey.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Currency.sol",
+        "../interfaces/IHooks.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": []
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/interfaces/IPoolManager.sol": {
+      "lastModificationDate": 1717263085193,
+      "contentHash": "2a8bc8753f4742227d4be241d2c9debd",
+      "sourceName": "@uniswap/v4-core/src/interfaces/IPoolManager.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../types/Currency.sol",
+        "../types/PoolKey.sol",
+        "../libraries/Pool.sol",
+        "./IHooks.sol",
+        "./external/IERC6909Claims.sol",
+        "./IProtocolFees.sol",
+        "../types/BalanceDelta.sol",
+        "../types/PoolId.sol",
+        "../libraries/Position.sol",
+        "./IExtsload.sol",
+        "./IExttload.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "IPoolManager"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/types/BeforeSwapDelta.sol": {
+      "lastModificationDate": 1717263085198,
+      "contentHash": "17a882cd3eb83d3cf72d49734e992cc5",
+      "sourceName": "@uniswap/v4-core/src/types/BeforeSwapDelta.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BalanceDelta.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "BeforeSwapDeltaLibrary"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/Hooks.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "2d37a52c5df0ed8fee9d0e81f1b10592",
+      "sourceName": "@uniswap/v4-core/src/libraries/Hooks.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../types/PoolKey.sol",
+        "../interfaces/IHooks.sol",
+        "./SafeCast.sol",
+        "./LPFeeLibrary.sol",
+        "../types/BalanceDelta.sol",
+        "../types/BeforeSwapDelta.sol",
+        "../interfaces/IPoolManager.sol",
+        "./ParseBytes.sol",
+        "./CustomRevert.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "Hooks"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/LPFeeLibrary.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "668e56337b2ea2e94fb7bded5c479f21",
+      "sourceName": "@uniswap/v4-core/src/libraries/LPFeeLibrary.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../types/PoolKey.sol",
+        "./CustomRevert.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "LPFeeLibrary"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/types/BalanceDelta.sol": {
+      "lastModificationDate": 1717263085198,
+      "contentHash": "9a2673d412379c0ed3eb69c325ad4632",
+      "sourceName": "@uniswap/v4-core/src/types/BalanceDelta.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "BalanceDeltaLibrary"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/interfaces/IHooks.sol": {
+      "lastModificationDate": 1717263085193,
+      "contentHash": "2439fdb2f5471ea15e5a238867f4289d",
+      "sourceName": "@uniswap/v4-core/src/interfaces/IHooks.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../types/PoolKey.sol",
+        "../types/BalanceDelta.sol",
+        "./IPoolManager.sol",
+        "../types/BeforeSwapDelta.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "IHooks"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/SafeCast.sol": {
+      "lastModificationDate": 1717263085195,
+      "contentHash": "b7e53eca060915e58c59e2336487f2ca",
+      "sourceName": "@uniswap/v4-core/src/libraries/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/ParseBytes.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "81e4f4a404a394e7c8cd98d0ff8e1af3",
+      "sourceName": "@uniswap/v4-core/src/libraries/ParseBytes.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ParseBytes"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/CustomRevert.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "917afe033398bd55c79fddc28a00e391",
+      "sourceName": "@uniswap/v4-core/src/libraries/CustomRevert.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "CustomRevert"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/types/PoolId.sol": {
+      "lastModificationDate": 1717263085198,
+      "contentHash": "c66182bdc0f68d70db4db2b4cae3f4b2",
+      "sourceName": "@uniswap/v4-core/src/types/PoolId.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PoolKey.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PoolIdLibrary"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/interfaces/IProtocolFees.sol": {
+      "lastModificationDate": 1717263085193,
+      "contentHash": "6f466dbf9bf9024821ac362a45aabbab",
+      "sourceName": "@uniswap/v4-core/src/interfaces/IProtocolFees.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../types/Currency.sol",
+        "../interfaces/IProtocolFeeController.sol",
+        "../types/PoolId.sol",
+        "../types/PoolKey.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "IProtocolFees"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/Position.sol": {
+      "lastModificationDate": 1717263085195,
+      "contentHash": "259c78669f764ab5eb4ee368ac42e022",
+      "sourceName": "@uniswap/v4-core/src/libraries/Position.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FullMath.sol",
+        "./FixedPoint128.sol",
+        "./LiquidityMath.sol",
+        "./CustomRevert.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Position"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/Pool.sol": {
+      "lastModificationDate": 1717263085195,
+      "contentHash": "3dd0dba3919cc6fbbafcce46845c0bc1",
+      "sourceName": "@uniswap/v4-core/src/libraries/Pool.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeCast.sol",
+        "./TickBitmap.sol",
+        "./Position.sol",
+        "./FullMath.sol",
+        "./FixedPoint128.sol",
+        "./TickMath.sol",
+        "./SqrtPriceMath.sol",
+        "./SwapMath.sol",
+        "../types/BalanceDelta.sol",
+        "../types/Slot0.sol",
+        "./ProtocolFeeLibrary.sol",
+        "./LiquidityMath.sol",
+        "./LPFeeLibrary.sol",
+        "./CustomRevert.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Pool"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/interfaces/IExttload.sol": {
+      "lastModificationDate": 1717263085193,
+      "contentHash": "1db2e22f6e1a05fabcc07fee5c212a87",
+      "sourceName": "@uniswap/v4-core/src/interfaces/IExttload.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.24"
+      ],
+      "artifacts": [
+        "IExttload"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/interfaces/IExtsload.sol": {
+      "lastModificationDate": 1717263085193,
+      "contentHash": "e814bd0a9f1ba8c5875c48c7d434af2e",
+      "sourceName": "@uniswap/v4-core/src/interfaces/IExtsload.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "IExtsload"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/interfaces/external/IERC6909Claims.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "ba5baad215160598302cabf24d194a18",
+      "sourceName": "@uniswap/v4-core/src/interfaces/external/IERC6909Claims.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IERC6909Claims"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/interfaces/IProtocolFeeController.sol": {
+      "lastModificationDate": 1717263085193,
+      "contentHash": "652cb812d9aadbab9997b41ff7e55f57",
+      "sourceName": "@uniswap/v4-core/src/interfaces/IProtocolFeeController.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../types/PoolKey.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IProtocolFeeController"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/FullMath.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "ff7d498ddd9e97838a3375127962ec9b",
+      "sourceName": "@uniswap/v4-core/src/libraries/FullMath.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/FixedPoint128.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "81cee77f7d7c816ced348989df7371e9",
+      "sourceName": "@uniswap/v4-core/src/libraries/FixedPoint128.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "FixedPoint128"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/LiquidityMath.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "662676436fefce941672d2e2f16d7ea5",
+      "sourceName": "@uniswap/v4-core/src/libraries/LiquidityMath.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "LiquidityMath"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/SqrtPriceMath.sol": {
+      "lastModificationDate": 1717263085195,
+      "contentHash": "11b4588f95882c0a57f606865b1fce09",
+      "sourceName": "@uniswap/v4-core/src/libraries/SqrtPriceMath.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeCast.sol",
+        "./FullMath.sol",
+        "./UnsafeMath.sol",
+        "./FixedPoint96.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SqrtPriceMath"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/TickBitmap.sol": {
+      "lastModificationDate": 1717263085195,
+      "contentHash": "29bebfa1ef76b1c7f76cca3ea58d04b1",
+      "sourceName": "@uniswap/v4-core/src/libraries/TickBitmap.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BitMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "TickBitmap"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/types/Slot0.sol": {
+      "lastModificationDate": 1717263085198,
+      "contentHash": "a7f021fae5fd38c76a802ebd1fef44da",
+      "sourceName": "@uniswap/v4-core/src/types/Slot0.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Slot0Library"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/ProtocolFeeLibrary.sol": {
+      "lastModificationDate": 1717263085195,
+      "contentHash": "aaec2675a9b14a0db766c6fa2b137323",
+      "sourceName": "@uniswap/v4-core/src/libraries/ProtocolFeeLibrary.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ProtocolFeeLibrary"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/SwapMath.sol": {
+      "lastModificationDate": 1717263085195,
+      "contentHash": "18647d08d930b133e88ab6f005a2d92a",
+      "sourceName": "@uniswap/v4-core/src/libraries/SwapMath.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FullMath.sol",
+        "./SqrtPriceMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SwapMath"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/TickMath.sol": {
+      "lastModificationDate": 1717263085195,
+      "contentHash": "e499fa6516dc51ecabd3f1ed1b6011db",
+      "sourceName": "@uniswap/v4-core/src/libraries/TickMath.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "TickMath"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/UnsafeMath.sol": {
+      "lastModificationDate": 1717263085196,
+      "contentHash": "2fd744d4d8034e828e43d4e7cd79485d",
+      "sourceName": "@uniswap/v4-core/src/libraries/UnsafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "UnsafeMath"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/FixedPoint96.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "1776e4be5f4f059e34830b5573a4f615",
+      "sourceName": "@uniswap/v4-core/src/libraries/FixedPoint96.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "FixedPoint96"
+      ]
+    },
+    "/Users/silvershield/dev/unigloves/lib/v4-core/src/libraries/BitMath.sol": {
+      "lastModificationDate": 1717263085194,
+      "contentHash": "e09992e68cbfee6676578b28a8eb6985",
+      "sourceName": "@uniswap/v4-core/src/libraries/BitMath.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "BitMath"
       ]
     }
   }

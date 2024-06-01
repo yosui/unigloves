@@ -663,6 +663,14 @@
     "@nomicfoundation/solidity-analyzer-win32-ia32-msvc" "0.1.1"
     "@nomicfoundation/solidity-analyzer-win32-x64-msvc" "0.1.1"
 
+"@nomiclabs/hardhat-ethers@npm:@nomicfoundation/hardhat-ethers@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.npmjs.org/@nomicfoundation/hardhat-ethers/-/hardhat-ethers-3.0.6.tgz"
+  integrity sha512-/xzkFQAaHQhmIAYOQmvHBPwL+NkwLzT9gRZBsgWUYeV+E6pzXsBQsHfRYbAZ3XEYare+T7S+5Tg/1KDJgepSkA==
+  dependencies:
+    debug "^4.1.1"
+    lodash.isequal "^4.5.0"
+
 "@openzeppelin/contracts@^5.0.2":
   version "5.0.2"
   resolved "https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-5.0.2.tgz"
@@ -930,6 +938,14 @@
   integrity sha512-hHxJU6PAEUn0TP4S/ZOzuTUvJWuZ6eIKeNKb5RBpODvSl6hp1Wrw4s7ATY50rklRCScUDpHzVA/DQdSjJ3UoYQ==
   dependencies:
     "@types/node" "*"
+
+"@uniswap/v4-core@file:lib/v4-core":
+  version "1.0.0"
+  resolved "file:lib/v4-core"
+
+"@uniswap/v4-periphery@file:lib/v4-periphery":
+  version "1.0.0"
+  resolved "file:lib/v4-periphery"
 
 abbrev@1, abbrev@1.0.x:
   version "1.0.9"
@@ -1886,7 +1902,7 @@ ethers@^5.7.2:
     "@ethersproject/web" "5.7.1"
     "@ethersproject/wordlists" "5.7.0"
 
-ethers@^6.1.0, ethers@^6.4.0, ethers@^6.7.0, ethers@6.x:
+ethers@^6.1.0, ethers@^6.12.1, ethers@^6.4.0, ethers@^6.7.0, ethers@6.x:
   version "6.12.1"
   resolved "https://registry.npmjs.org/ethers/-/ethers-6.12.1.tgz"
   integrity sha512-j6wcVoZf06nqEcBbDWkKg8Fp895SS96dSnTCjiXT+8vt2o02raTn4Lo9ERUuIVU5bAjoPYeA+7ytQFexFmLuVw==
@@ -2079,11 +2095,6 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
-
-fsevents@~2.3.2:
-  version "2.3.3"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
-  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.2:
   version "1.1.2"
@@ -3777,14 +3788,6 @@ uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
-
-"v4-core@file:./lib/v4-core":
-  version "1.0.0"
-  resolved "file:lib/v4-core"
-
-"v4-periphery@file:./lib/v4-periphery":
-  version "1.0.0"
-  resolved "file:lib/v4-periphery"
 
 v8-compile-cache-lib@^3.0.1:
   version "3.0.1"

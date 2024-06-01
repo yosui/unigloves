@@ -1,0 +1,118 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Pool",
+  "sourceName": "@uniswap/v4-core/src/libraries/Pool.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "InvalidFeeForExactOut",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoLiquidityToReceiveFees",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolAlreadyInitialized",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PoolNotInitialized",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint160",
+          "name": "sqrtPriceCurrentX96",
+          "type": "uint160"
+        },
+        {
+          "internalType": "uint160",
+          "name": "sqrtPriceLimitX96",
+          "type": "uint160"
+        }
+      ],
+      "name": "PriceLimitAlreadyExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint160",
+          "name": "sqrtPriceLimitX96",
+          "type": "uint160"
+        }
+      ],
+      "name": "PriceLimitOutOfBounds",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int24",
+          "name": "tick",
+          "type": "int24"
+        }
+      ],
+      "name": "TickLiquidityOverflow",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int24",
+          "name": "tickLower",
+          "type": "int24"
+        }
+      ],
+      "name": "TickLowerOutOfBounds",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int24",
+          "name": "tick",
+          "type": "int24"
+        }
+      ],
+      "name": "TickNotInitialized",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int24",
+          "name": "tickUpper",
+          "type": "int24"
+        }
+      ],
+      "name": "TickUpperOutOfBounds",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int24",
+          "name": "tickLower",
+          "type": "int24"
+        },
+        {
+          "internalType": "int24",
+          "name": "tickUpper",
+          "type": "int24"
+        }
+      ],
+      "name": "TicksMisordered",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220d45a7a65825c5a6a78d48a4c940c2b51ae54e409854b8e7f68b0c00c5ff9590764736f6c63430008180033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220d45a7a65825c5a6a78d48a4c940c2b51ae54e409854b8e7f68b0c00c5ff9590764736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
